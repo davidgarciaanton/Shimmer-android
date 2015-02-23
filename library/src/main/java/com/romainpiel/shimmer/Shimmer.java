@@ -1,10 +1,11 @@
 package com.romainpiel.shimmer;
 
-import android.animation.Animator;
-import android.animation.ObjectAnimator;
-import android.animation.ValueAnimator;
 import android.os.Build;
 import android.view.View;
+
+import com.nineoldandroids.animation.Animator;
+import com.nineoldandroids.animation.ObjectAnimator;
+import com.nineoldandroids.animation.ValueAnimator;
 
 /**
  * Shimmer
@@ -17,15 +18,15 @@ public class Shimmer {
     public static final int ANIMATION_DIRECTION_LTR = 0;
     public static final int ANIMATION_DIRECTION_RTL = 1;
 
-    private static final int DEFAULT_REPEAT_COUNT = ValueAnimator.INFINITE;
-    private static final long DEFAULT_DURATION = 1000;
-    private static final long DEFAULT_START_DELAY = 0;
-    private static final int DEFAULT_DIRECTION = ANIMATION_DIRECTION_LTR;
+    private static final int  DEFAULT_REPEAT_COUNT = ValueAnimator.INFINITE;
+    private static final long DEFAULT_DURATION     = 1000;
+    private static final long DEFAULT_START_DELAY  = 0;
+    private static final int  DEFAULT_DIRECTION    = ANIMATION_DIRECTION_LTR;
 
-    private int repeatCount;
-    private long duration;
-    private long startDelay;
-    private int direction;
+    private int                       repeatCount;
+    private long                      duration;
+    private long                      startDelay;
+    private int                       direction;
     private Animator.AnimatorListener animatorListener;
 
     private ObjectAnimator animator;
